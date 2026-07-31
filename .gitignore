@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Model weights
+*.pth
+*.pt
+
+# Dataset
+data/raw/
+data/cleaned/
+
+# Tokenizer cache
+*.cache
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+data/*.txt
+data/raw/
+data/cleaned/
