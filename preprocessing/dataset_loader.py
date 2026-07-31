@@ -139,7 +139,7 @@ class CSITDatasetLoader:
         )
 
 
-        print("\nDataset Ready 🔥")
+        print("\nDataset Ready ")
 
         print(
             f"Saved: {output_path}"
