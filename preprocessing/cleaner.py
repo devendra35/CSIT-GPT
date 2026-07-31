@@ -2,10 +2,8 @@ import re
 import unicodedata
 from typing import Dict
 
-
-# =====================================================
 # CSIT DOCUMENT STRUCTURE
-# =====================================================
+
 
 IMPORTANT_HEADERS = [
     "Subject",
@@ -58,9 +56,6 @@ class TextCleaner:
         self.normalize_form = normalize_form
 
 
-        # =====================================================
-        # Added for CSIT GPT
-        # =====================================================
 
         self.important_headers = IMPORTANT_HEADERS
 
@@ -68,9 +63,7 @@ class TextCleaner:
 
 
 
-        # =====================================================
-        # Regex Rules
-        # =====================================================
+      
 
 
         self._multi_space_re = re.compile(
@@ -84,8 +77,7 @@ class TextCleaner:
 
 
         # PDF artifact:
-        # data-
-        # base
+    
 
         self._hyphen_linebreak_re = re.compile(
             r"(\w)-\n(\w)"
@@ -101,11 +93,8 @@ class TextCleaner:
             r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]"
         )
 
-
-
-    # =====================================================
     # Unicode Processing
-    # =====================================================
+
 
 
     def normalize_unicode(
@@ -131,10 +120,7 @@ class TextCleaner:
         )
 
 
-
-    # =====================================================
     # PDF Cleaning
-    # =====================================================
 
 
     def fix_pdf_linebreaks(
@@ -147,11 +133,7 @@ class TextCleaner:
             text
         )
 
-
-
-    # =====================================================
-    # CSIT Structure Preservation (NEW)
-    # =====================================================
+    # CSIT Structure Preservation (NEW
 
 
     def preserve_headers(
@@ -202,9 +184,7 @@ class TextCleaner:
 
 
 
-    # =====================================================
     # Formatting
-    # =====================================================
 
 
     def collapse_whitespace(
@@ -242,11 +222,8 @@ class TextCleaner:
             text
         )
 
-
-
-    # =====================================================
     # Duplicate Removal
-    # =====================================================
+
 
 
     def dedupe_lines(
@@ -286,9 +263,8 @@ class TextCleaner:
 
 
 
-    # =====================================================
     # Symbol Cleaning
-    # =====================================================
+
 
 
     def remove_unwanted_symbols(
@@ -331,9 +307,7 @@ class TextCleaner:
 
 
 
-    # =====================================================
     # Statistics (NEW)
-    # =====================================================
 
 
     def get_statistics(
@@ -354,9 +328,7 @@ class TextCleaner:
 
 
 
-    # =====================================================
     # Main Pipeline
-    # =====================================================
 
 
     def clean(
@@ -422,11 +394,7 @@ class TextCleaner:
 
         return text
 
-
-
-    # =====================================================
     # File Processing
-    # =====================================================
 
 
     def clean_file(
@@ -461,9 +429,8 @@ class TextCleaner:
 
 
 
-# =====================================================
+
 # Testing
-# =====================================================
 
 
 if __name__ == "__main__":
