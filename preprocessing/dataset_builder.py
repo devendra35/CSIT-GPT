@@ -15,9 +15,8 @@ from cleaner import TextCleaner
 
 
 
-# ==========================
 # CONFIG
-# ==========================
+
 
 RAW_DIR = "../data/raw"
 
@@ -31,9 +30,9 @@ SUPPORTED_EXTENSIONS = [
 
 
 
-# ==========================
+
 # SUBJECT DETECTION
-# ==========================
+
 
 
 def detect_subject(filename):
@@ -67,9 +66,9 @@ def detect_subject(filename):
 
 
 
-# ==========================
+# ==
 # BUILDER
-# ==========================
+# ==
 
 
 def build_dataset():
@@ -84,7 +83,7 @@ def build_dataset():
 
     if not raw_path.exists():
 
-        print("❌ Raw data folder missing")
+        print(" Raw data folder missing")
 
         return
 
@@ -120,7 +119,7 @@ def build_dataset():
 
 
 
-    print("\n🔥 Building CSIT Dataset\n")
+    print("\n Building CSIT Dataset\n")
 
 
 
@@ -218,7 +217,7 @@ def build_dataset():
 
 
 
-    print("\n🔥 DATASET READY")
+    print("\n DATASET READY")
     print(
         "Saved:",
         OUTPUT_FILE
@@ -229,11 +228,7 @@ def build_dataset():
         len(dataset)
     )
 
-
-
-# ==========================
 # RUN
-# ==========================
 
 
 if __name__ == "__main__":
