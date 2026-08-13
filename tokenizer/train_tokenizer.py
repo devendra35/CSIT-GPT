@@ -36,7 +36,7 @@ SPECIAL_TOKENS = [
 def train():
 
 
-    print("🔥 Starting CSIT-GPT tokenizer training")
+    print(" Starting CSIT-GPT tokenizer training")
 
 
     tokenizer = Tokenizer(
@@ -96,7 +96,7 @@ def train():
     )
 
 
-    print("✅ Tokenizer trained successfully")
+    print(" Tokenizer trained successfully")
 
     print("Files created:")
     print(
